@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>個人名片</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #f5f7fa;
+            font-family: 'Segoe UI', '微軟正黑體', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            display: flex;
+            width: 500px;
+            height: 250px;
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+        .card-left {
+            background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            clip-path: polygon(
+                25% 5%, 75% 5%,
+                100% 50%,
+                75% 95%, 25% 95%,
+                0% 50%
+            );
+            overflow: hidden;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            margin-bottom: 16px;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card-left .name {
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        .card-right {
+            flex: 1;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .info {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+        .contact {
+            margin-top: 16px;
+        }
+        .contact span {
+            display: block;
+            color: #888;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-left">
+            <div class="avatar">
+                <img src="未命名 (4535 x 4535 像素).png" alt="個人照片">
+            </div>
+            <div class="name">馮昱翔</div>
+        </div>
+        <div class="card-right">
+            <div class="title">設計師</div>
+            <div class="info">國立台北教育大學 藝術設計系</div>
+            <div class="info">熱愛設計與藝術開發</div>
+            <div class="contact">
+                <span>✉️ dt112003@dtjh.ptc.edu.tw</span>
+                <span>📞 0912-345-678</span>
+                <span>🌐 github.com/s111415042</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
