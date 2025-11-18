@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>國立臺北教育大學 — 114 教學科技應用設計競賽</title>
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --panel:#181f2a;
+      --muted:#9aa6b2;
+      --accent:#2dd4bf;
+      --section:#131a23;
+      --maxw:900px;
+      --radius:14px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;background:var(--bg);color:#e6eef3}
+    a{color:var(--accent);text-decoration:none}
+    .wrap{max-width:var(--maxw);margin:40px auto 32px;padding:0 0 24px;background:var(--panel);border-radius:var(--radius);box-shadow:0 6px 30px rgba(2,6,23,0.7);}
+    header{padding:32px 36px 18px 36px;display:flex;gap:18px;align-items:center;border-radius:var(--radius) var(--radius) 0 0;background:var(--section);border-bottom:2px solid #222c38;}
+    .brand{display:flex;gap:14px;align-items:center}
+    .brand img{width:70px;height:70px;object-fit:cover;border-radius:10px;border:1px solid #232b36}
+    h1{font-size:1.5rem;margin:0 0 2px 0;letter-spacing:1px;}
+    p.lead{margin:0;color:var(--muted);font-size:1rem;}
+    nav{margin-left:auto}
+    nav a{margin-left:14px;padding:7px 14px;border-radius:8px;background:transparent;font-size:15px;transition:background .2s}
+    nav a:hover{background:rgba(45,212,191,0.08);color:var(--accent)}
+    .hero{display:flex;gap:24px;padding:32px 36px 0 36px;align-items:center}
+    .hero-card{flex:1;padding:0 0 0 0;}
+    .hero h2{margin:0 0 10px 0;font-size:1.3rem;color:var(--accent);letter-spacing:1px;}
+    .hero .summary{color:#e6eef3;font-size:1.1rem;line-height:1.7;margin-bottom:10px;}
+    .badges{margin:10px 0 0 0;}
+    .badge{display:inline-block;padding:5px 12px;border-radius:999px;background:rgba(45,212,191,0.08);color:var(--accent);font-size:13px;margin-right:8px;}
+    .images{display:flex;flex-direction:column;gap:10px;min-width:120px;}
+    .images img{width:120px;height:120px;object-fit:cover;border-radius:10px;border:1px solid #232b36}
+    main{margin-top:0}
+    section{margin:0 36px 24px 36px;padding:28px 24px 18px 24px;background:var(--section);border-radius:12px;border-left:4px solid var(--accent);box-shadow:0 2px 12px #0b0f1422;}
+    section:not(:first-child){margin-top:0;}
+    section h3{margin:0 0 10px 0;font-size:1.15rem;color:var(--accent);letter-spacing:1px;}
+    ul{margin:8px 0 0 20px;color:var(--muted);font-size:1rem;line-height:1.7;}
+    .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:10px;}
+    .grid > div{background:rgba(255,255,255,0.01);border-radius:8px;padding:12px 10px;box-shadow:0 1px 4px #0002;}
+    .grid h4{margin:0 0 4px 0;font-size:1.05rem;color:#fff;}
+    .grid p{margin:0;color:var(--muted);font-size:0.98rem;}
+    .cta{display:inline-block;margin-top:10px;padding:10px 18px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#06b6d4);color:#032024;font-weight:600;font-size:1rem;}
+    footer{margin:0 36px;padding:18px 0 0 0;border-top:1px dashed #232b36;color:var(--muted);font-size:13px}
+    @media(max-width:900px){.wrap{margin:0;}.hero,.header,section,footer{margin:0 10px;}.hero{flex-direction:column;}.images{flex-direction:row;}.images img{width:90px;height:90px;}}
+    @media(max-width:600px){header,.hero,section,footer{padding:10px !important;}.wrap{padding:0;}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div>
+          <h1>114 教學科技應用設計競賽</h1>
+          <p class="lead">國立臺北教育大學 教學發展中心主辦</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">簡介</a>
+        <a href="#themes">主題</a>
+        <a href="#schedule">時程</a>
+        <a href="#submit">繳件</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="hero-card">
+        <h2>活動宗旨</h2>
+        <div class="summary">鼓勵學生運用 VR、AI、Apple 教育工具，設計創新且實用的教學應用，強化數位內容創作力。</div>
+        <div class="badges">
+          <span class="badge">對象：本校在學學生</span>
+          <span class="badge">每隊 1-4 人</span>
+          <span class="badge">可邀 1 位指導老師</span>
+        </div>
+      </div>
+      <aside class="images">
+      </aside>
+    </div>
+
+    <main>
+      <section id="about">
+        <h3>競賽辦法</h3>
+        <ul>
+          <li>每人最多報名 2 件作品，不可重複投件於不同類別。</li>
+          <li>作品須為原創，引用素材需註明來源。</li>
+        </ul>
+      </section>
+
+      <section id="themes">
+        <h3>主題組別</h3>
+        <div class="grid">
+          <div>
+            <h4>Uptale VR 教學應用</h4>
+            <p>設計沉浸式教學場景，展現虛擬實境於教學的應用潛能。</p>
+          </div>
+          <div>
+            <h4>AI 小工具教學創新</h4>
+            <p>發展 AI 工具於教學現場，解決學習難題或提升成效。</p>
+          </div>
+          <div>
+            <h4>Apple 教育應用設計</h4>
+            <p>結合 Apple 生態系工具的教案或應用程式設計。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule">
+        <h3>報名與日程</h3>
+        <ul>
+          <li>報名截止：114/11/7（五）<br><a href="https://forms.gle/Hs9SkDYpiAaB2J9p6" target="_blank" rel="noopener">線上報名</a></li>
+          <li>繳件截止：114/12/14（日）</li>
+          <li>得獎公告：115/1 月底於教學發展中心網頁</li>
+        </ul>
+      </section>
+
+      <section id="submit">
+        <h3>繳件方式</h3>
+        <ul>
+          <li>計畫書（PDF）：組別、作品名稱、團隊介紹、創作理念、教學目標、內容規劃、預期成效</li>
+          <li>成品：Uptale VR、AI Demo、Apple 教案或應用程式原型</li>
+          <li>導覽影片（10 分鐘內，HD1080P，Youtube 連結）</li>
+          <li>個資聲明暨授權書</li>
+        </ul>
+        <div style="margin-top:10px">上傳表單：<a href="https://forms.gle/PQ1AEJ1xBo3yRTZd6" target="_blank" rel="noopener">https://forms.gle/PQ1AEJ1xBo3yRTZd6</a></div>
+      </section>
+
+      <section>
+        <h3>評審標準</h3>
+        <ul>
+          <li>完整性 40%</li>
+          <li>創意及互動 30%</li>
+          <li>實踐效益 30%</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>獎勵辦法</h3>
+        <ul>
+          <li>特優 1 件（NT$8,000）</li>
+          <li>優選 1 件（NT$5,000）</li>
+          <li>佳作 2 件（NT$2,000）</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>注意事項</h3>
+        <ul>
+          <li>參賽作品須為原創，侵權自負，並取消資格。</li>
+          <li>非原創素材須註明來源。</li>
+          <li>主辦單位得為推廣及教育目的重製、修改、公開展示。</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>主辦：國立臺北教育大學 教學發展中心</div>
+        <div style="text-align:right">
+          <div>如需完整辦法，請聯絡教學發展中心</div>
+          <div style="margin-top:6px"><a class="cta" href="#submit">我要繳件</a></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
