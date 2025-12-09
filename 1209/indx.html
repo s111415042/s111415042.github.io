@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>聯絡方式</title>
+  <style>
+    :root{
+      --bg:#f4f6fa; /* 淺灰藍 */
+      --card:#fff;
+      --accent:#23406e; /* 深藍主色 */
+      --accent-light:#3b5a8c;
+      --muted:#5a6473; /* 穩重灰 */
+      --shadow: 0 6px 18px rgba(35,64,110,0.08);
+      --radius:14px;
+      font-family: 'Segoe UI', 'Noto Sans TC', Arial, sans-serif;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:var(--bg);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px 20px;
+      color:var(--accent);
+      -webkit-font-smoothing:antialiased;
+    }
+    .contact-wrap{
+      width:100%;
+      max-width:700px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:32px 28px;
+      display:flex;
+      gap:24px;
+      align-items:center;
+      border:1.5px solid #e3e7ef;
+    }
+    .side{
+      flex:0 0 100px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .logo{
+      width:70px;
+      height:70px;
+      border-radius:12px;
+      background:linear-gradient(135deg, #23406e18, #3b5a8c0d);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:var(--accent);
+      font-weight:700;
+      font-size:22px;
+      letter-spacing:2px;
+      border:1.5px solid #d1d7e3;
+    }
+    .main{
+      flex:1 1 auto;
+    }
+    h1{margin:0 0 2px 0;font-size:22px;letter-spacing:-0.2px;font-weight:600;color:var(--accent)}
+    p.lead{margin:6px 0 20px;color:var(--muted);font-size:15px}
+    .contacts{display:flex;flex-direction:column;gap:14px}
+    .row{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    a.contact-link{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      padding:12px 16px;
+      border-radius:10px;
+      text-decoration:none;
+      color:var(--accent);
+      background:transparent;
+      border:1.2px solid #e3e7ef;
+      transition:background .13s, border .13s, color .13s, transform .08s;
+    }
+    a.contact-link:hover{
+      background:rgba(35,64,110,0.07);
+      border-color:var(--accent-light);
+      color:var(--accent-light);
+      transform:translateY(-2px)
+    }
+    .icon-wrap{
+      width:40px;height:40px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:rgba(35,64,110,0.08);color:var(--accent);
+    }
+    .label{font-weight:600;font-size:16px;letter-spacing:0.2px}
+    .meta{color:var(--muted);font-size:13px}
+    @media (max-width:520px){
+      .card{flex-direction:column;align-items:stretch;padding:22px 8px}
+      .side{flex:0 0 auto}
+      .logo{width:54px;height:54px;font-size:17px}
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-wrap">
+    <div class="card" role="region" aria-label="聯絡資訊">
+      <div class="side">
+        <div class="logo" aria-hidden="true">聯</div>
+      </div>
+      <div class="main">
+        <h1>聯絡我</h1>
+        <p class="lead">歡迎透過以下方式與我聯絡，會盡快回覆。點選連結可直接開啟對應應用程式或網頁。</p>
+        <div class="contacts">
+          <div class="row">
+            <a class="contact-link" href="mailto:yourname@example.com" aria-label="發送 Email" title="yourname@example.com">
+              <span class="icon-wrap" aria-hidden="true">
+                <!-- 信箱 SVG -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 7.5V18a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M21 7.5L12.5 13 4 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <div>
+                <div class="label">Email</div>
+                <div class="meta">yourname@example.com</div>
+              </div>
+            </a>
+          </div>
+          <div class="row">
+            <a class="contact-link" href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="在 Instagram 上追蹤" title="Instagram">
+              <span class="icon-wrap" aria-hidden="true">
+                <!-- IG SVG -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <div>
+                <div class="label">Instagram</div>
+                <div class="meta">@yourusername</div>
+              </div>
+            </a>
+          </div>
+          <div class="row">
+            <a class="contact-link" href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="在 Facebook 上聯絡" title="Facebook">
+              <span class="icon-wrap" aria-hidden="true">
+                <!-- FB SVG -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18 2h-3a4 4 0 0 0-4 4v3H8v3h3v7h3v-7h2.2l.8-3H14V6a1 1 0 0 1 1-1h3V2z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <div>
+                <div class="label">Facebook</div>
+                <div class="meta">facebook.com/yourusername</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
